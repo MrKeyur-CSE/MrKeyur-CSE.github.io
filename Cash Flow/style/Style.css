@@ -1,0 +1,115 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+li,
+a,
+button {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    cursor: pointer;
+    width: auto;
+    height: 100px;
+}
+
+.navlink {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlink li a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navlink li a:hover {
+    color: darkgoldenrod;
+}
+
+.navlink li.active a {
+    background-color: darkgoldenrod;
+    border-radius: 40px;
+    color: #333333;
+}
+
+main {
+    padding: 20px 10%;
+    color: darkgoldenrod;
+    height: 500px;
+    /* background-color: aqua; */
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 28.8px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 48px;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/* .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.socials li {
+    margin: 0 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.socials a i {
+    font-size: 25px;
+    transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+    color: #CE643A;
+} */

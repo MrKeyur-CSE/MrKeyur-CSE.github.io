@@ -1,0 +1,177 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+li,
+a,
+button {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    cursor: pointer;
+    width: auto;
+    height: 100px;
+}
+
+.navlink {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlink li a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navlink li a:hover {
+    color: darkgoldenrod;
+}
+
+.navlink li.active a {
+    background-color: darkgoldenrod;
+    border-radius: 40px;
+    color: #333333;
+}
+
+main {
+    padding: 20px 5%;
+    color: #ffffff;
+    height: auto;
+    display: flex;
+    /* background-color: aquamarine; */
+}
+
+.main-title {
+    /* background-color: brown; */
+    padding: 20px;
+    border-radius: 6px;
+    text-align: left;
+    color: #ffffff;
+    width: 50%;
+}
+
+.main-por .btn {
+    background-color: darkgoldenrod;
+    margin-top: 20px;
+    color: #333333;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Output Box */
+.output-box {
+    /* background-color: rgb(193, 92, 92); */
+    height: auto;
+    width: 50%;
+    padding: 20px;
+    border: none;
+}
+
+.output-table {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.output-table th,
+.output-table td {
+    padding: 12px 15px;
+    border: none;
+}
+
+.output-table th {
+    background-color: darkgoldenrod;
+    color: #333333;
+}
+
+.output-table td {
+    background-color: #444444;
+}
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #33333367;
+    z-index: 1000;
+    box-shadow: #ffffff;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #766262;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 10% auto;
+    border-radius: 20px;
+}
+
+.modal-content h3 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-table {
+    width: auto;
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: darkgoldenrod;
+    color: #333333;
+    border: none;
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Close Button */
+.close-btn {
+    font-size: 22px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}

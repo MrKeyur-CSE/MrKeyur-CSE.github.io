@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--icon:link-->
+    <link rel="icon" href="./images/11foods.ico" type="image/x-icon">
+
+    <!--css:link-->
+    <link rel="stylesheet" href="./style/userStyle.css">
+
+    <!--popup:script-->
+    <script src="./script/popup.js" defer></script>
+
+    <!--font:links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--icon:link-->
+    <script src="https://kit.fontawesome.com/d82facdcdd.js" crossorigin="anonymous"></script>
+
+    <!--title-->
+    <title>Eleven Foods Cash Flow</title>
+
+</head>
+
+<body>
+    <!--Header:Logo, Menu and Resume -->
+    <header>
+        <a href="./cash.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="navlink">
+                <li><a href="./cash.html">Cash</a></li>
+                <li class="active"><a href="./user.html">User</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-por">
+        <div class="main-title">
+            <h1>User Management</h1>
+            <p>Welcome to the user management page.</p>
+            <!-- Button for popup -->
+            <button class="btn" id="openModalBtn">Add User</button>
+        </div>
+
+        <!--Display result-->
+        <div id="output" class="output-box">
+            <h1>Employee Information:</h1>
+            <table class="output-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee Number</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody" class="output-text">
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Modal -->
+        <center>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModalBtn">&times;</span>
+
+                    <h3>Enter Data</h3>
+
+                    <form class="modal-form" id="dataForm">
+                        <table class="modal-table">
+                            <tr>
+                                <td><label for="empInput">Employee Name:</label></td>
+                                <td><input class="modal-input" type="text" id="empInput" placeholder="Name"
+                                        autocomplete="off" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="empNumberInput">Employee Number:</label></td>
+                                <td><input class="modal-input" type="number" id="empNumberInput" placeholder="Number"
+                                        autocomplete="off" required /></td>
+                            </tr>
+                        </table>
+
+                        <button class="btn-submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </center>
+
+    </main>
+</body>
+
+</html>
